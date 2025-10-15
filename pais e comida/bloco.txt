@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+ 
+<html lang="PT-BR"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Comida Pais</title> 
+<link rel="icon" href="icone Tteokbokki.png"> 
+<link rel="stylesheet" href="estilo.css"> 
+</head> 
+ 
+<body> 
+ 
+    <header> 
+ 
+        <img src="imagem cabesalho.png" alt="" width="100%"> 
+ 
+        <a href="historia">História</a> 
+        <a href="curiosidades">Curiosidades</a> 
+        <a href="ingredientes">Ingredientes</a> 
+        <a href="pessoas relevantes">Pessoas Relacionadas</a> 
+    </header> 
+   
+    <h1>Comida Pais edição Coreia do Sul</h1>  
+ 
+    <h2> História do Tteokbokki</h2> 
+ 
+    <div> 
+<img src="imagem de cabesalho 2.jpg" alt="historia" width="400"> 
+</div> 
+<p> 
+A história do tteokbokki tem duas versões principais: a sua origem na realeza 
+coreana com o Gungjung Tteokbokki (uma versão suave, à base de molho de soja, 
+servida nos séculos XIX e início do XX) e a sua popularização nas ruas com o 
+Gochujang Tteokbokki (uma versão picante, inventada por Ma Bok-rim nos anos 
+50, após a Guerra da Coreia). O prato evoluiu de pratos com bolos de arroz já 
+existentes na Coreia, tornando-se um dos alimentos mais amados do país.  
+</p> 
+<h2>Curiosidades sobre o Tteokbokki</h2> 
+<div> 
+<img src="imagem curiosidades.jpg" alt="curiosidades" width="400"> 
+</div> 
+<ul> 
+<li>O Tteokbokki é um prato de rua coreano popular, que pode ser traduzido 
+como "bolo de arroz salteado".</li> 
+<li>Sua versão moderna e apimentada foi criada sem querer nos anos 50 por Ma 
+Bok Rim, e o prato evoluiu ao longo do tempo, existindo hoje em versões como o 
+Tteokbokki de palácio (Gungjung Tteokbokki) e outras variações com ingredientes 
+como queijo, curry ou macarrão instantâneo.</li> 
+<li>O sabor do bolinho de arroz (tteok) em si tem um sabor neutro, mas o molho 
+dá o sabor característico picante, doce, salgado e com sabor umami.</li> 
+<li>Sua popularidade por ser uma das comidas de rua mais populares da 
+Coreia, encontrada em todos os cantos do país e bastante consumida pelos 
+coreanos. a</li> 
+</ul> 
+<!-- lista não ordenada --> 
+<H2> Igredientes do Tteokbokki</H2> 
+<div> 
+<img src="imagens igredientes.jpg" alt="ingredientes" width="400"> 
+</div> 
+<ol> 
+<li>300 g de bolinhos de arroz (tteok)</li> 
+<li>2 colheres (sopa) de óleo de gergelim</li> 
+<li>meia cebola média picada</li> 
+<li>2 dentes de alho picados</li> 
+<li>meia xícara (chá) de pasta de gochujang (pasta de pimenta coreana)</li> 
+<li>1 colher (sopa) de açúcar</li> 
+<li>1 colher (sopa) de molho de soja</li> 
+<li>2 xícaras (chá) de MAGGI® Caldo Galinha (2 tabletes)</li> 
+<li>1 pitada de pimenta vermelha em flocos</li> 
+<li>1 talo de cebolinha verde picado</li> 
+</ol> 
+<!-- lista ordenada --> 
+<h2>Pessoas relacionadas com a receita</h2> 
+<div> 
+<img src="imagem dorama.webp" alt="pessoas relevantes" width="400"> 
+</div> 
+<dl> 
+<dd>Doramas com Tteokbokki 
+O tteokbokki é um prato tão comum que se tornou um elemento recorrente na 
+maioria dos doramas, com o seu aparecimento a ser muitas vezes associado a 
+momentos de convívio, reflexão e entreajuda. </dd> 
+<dd>Love Scout: 
+No dorama "Love Scout", o tteokbokki é apresentado como um elemento 
+importante, onde os personagens se juntam para comer e conversar, o que 
+contribui para a sensação de amizade e união.</dd> 
+<dd>Good Partner: 
+Outro exemplo é "Good Partner", onde o tteokbokki é servido como um prato 
+que une as pessoas, reforçando laços e promovendo a interação entre as 
+personagens.</dd> 
+<dd>Outros Doramas: 
+Embora não específicos, é comum o tteokbokki aparecer em doramas de 
+diferentes géneros, muitas vezes em bancas de rua ou em restaurantes locais, 
+servindo para representar uma parte importante da experiência alimentar 
+coreana.</dd> 
+</dl> 
+<!-- lista de descrição --> 
+<footer> 
+&copy; Comida Pais | Edição Coreia do Sul | 2025 
+</footer> 
+</body> 
+</html> 
+Parte 2  
+Estilo  
+Body{ 
+Background-color: rgb(255, 191, 139); 
+Margin: 0px; 
+} 
+H1{ 
+Font-family: arial; 
+Font-size: 60px; 
+Text-align: center; 
+Color: #3ª0202; 
+} 
+H2{ 
+Font-family: arial; 
+Font-size: 40px; 
+Text-align: center; 
+Color: #ffffffde; 
+Background-color: #8b0a0ade; 
+Padding:10px; 
+/* padding: 20px 30px 10px 40px; */ 
+}  
+P, li, dd{ 
+Font-family: arial; 
+Font-size:  20px; 
+Text-align: justify; 
+Color: #ffffffde; 
+} 
+Dd{ 
+Text-align:center ; 
+} 
+Li{ 
+Margin: 0px 00px 0px 240px; 
+} 
+Nav{ 
+Text-align:center ; 
+Margin: 10px 0px 0px 0px; 
+} 
+Nav a{ 
+Font-family: arial; 
+Font-size: 30px; 
+Text-align: center; 
+Color: #ffffffde; 
+Background-color: #8b0a0ade; 
+Padding:20px; 
+Text-decoration: none; 
+Border-radius: 20px; 
+Margin: 20px; 
+} 
+Div{ 
+Text-align: center; 
+} 
+Footer{ 
+Font-family: arial; 
+Font-size: 40px; 
+Text-align: center; 
+Color: #ffffffde; 
+Background-color: #8b0a0ade;
+
