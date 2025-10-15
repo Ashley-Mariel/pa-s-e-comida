@@ -1,0 +1,89 @@
+body{ 
+Background-color: #fff; 
+Margin: 20px; 
+}
+
+H1{ 
+Font-family: arial; 
+Font-size: 60px; 
+Text-align: center; 
+Color: #58b058;
+}
+
+H2{ 
+Font-family: arial; 
+Font-size: 40px; 
+Text-align: center; 
+Color: #f5deb3; 
+Background-color: #8b4513; 
+Padding:10px; 
+/* padding: 20px 30px 10px 40px; */ 
+}
+
+P, li, dd{ 
+Font-family: arial; 
+Font-size:  20px; 
+Text-align: justify; 
+Color: #561010de; 
+}
+
+Dd{ 
+ Margin: 0px 50px 10px 50px;
+} 
+
+Li{ 
+Margin: 0px 50px 10px 50px; 
+} 
+
+Nav{ 
+Text-align:center ; 
+Margin: 10px 0px 0px 0px; 
+} 
+
+nav a{ 
+Font-family: arial; 
+Font-size: 30px; 
+Text-align: center; 
+Color: #ffffffde; 
+Background-color: #8b0a0ade; 
+Padding:20px; 
+Text-decoration: none; 
+Border-radius: 20px; 
+Margin: 20px; 
+} 
+
+Div{ 
+Text-align: center; 
+} 
+
+Footer{ 
+Font-family: arial; 
+Font-size: 40px; 
+Text-align: center; 
+Color: #ffffffde; 
+Background-color: #8b0a0ade;
+}
+
+h5{ 
+Font-family: arial; 
+Font-size: 20px; 
+Text-align: center; 
+Color: #fff;
+}
+
+h3{ 
+Font-family: arial; 
+Margin: 0px 50px 10px 50px; 
+color: #8b0a0ade;
+}
+
+header{
+Font-family: arial; 
+Margin: 0px 50px 10px 50px;
+image-rendering: auto;
+}
+
+#volta{
+text-align: right;
+margin-right: 20px;
+}

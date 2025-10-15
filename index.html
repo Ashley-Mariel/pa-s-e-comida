@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comida e País</title>
+    <link rel="icon" href="icone.png">
+    <style>
+        body {
+            background-color: #fff;
+            margin: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark {
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        h1 {
+            font-family: arial;
+            font-size: 60px;
+            text-align: center;
+            color: #58b058;
+            transition: color 0.3s;
+        }
+
+        body.dark h1 {
+            color: #8bc34a;
+        }
+
+        h2 {
+            font-family: arial;
+            font-size: 40px;
+            text-align: center;
+            color: #f5deb3;
+            background-color: #8b4513;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark h2 {
+            background-color: #5d2e0f;
+            color: #f0f0f0;
+        }
+
+        p, li, dd {
+            font-family: arial;
+            font-size: 20px;
+            text-align: justify;
+            color: #561010de;
+            transition: color 0.3s;
+        }
+
+        body.dark p, body.dark li, body.dark dd {
+            color: #d7ccc8;
+        }
+
+        dd {
+            margin: 0px 50px 10px 50px;
+        }
+
+        li {
+            margin: 0px 50px 10px 50px;
+        }
+
+        nav {
+            text-align: center;
+            margin: 10px 0px 0px 0px;
+        }
+
+        nav a {
+            font-family: arial;
+            font-size: 30px;
+            text-align: center;
+            color: #ffffffde;
+            background-color: #8b0a0ade;
+            padding: 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            margin: 20px, 30px, 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark nav a {
+            background-color: #5d0707;
+            color: #f0f0f0;
+        }
+
+        div {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        footer {
+            font-family: arial;
+            font-size: 40px;
+            text-align: center;
+            color: #ffffffde;
+            background-color: #8b0a0ade;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark footer {
+            background-color: #5d0707;
+            color: #f0f0f0;
+        }
+
+        h5 {
+            font-family: arial;
+            font-size: 20px;
+            text-align: center;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        body.dark h5 {
+            color: #d7ccc8;
+        }
+
+        h3 {
+            font-family: arial;
+            margin: 0px 50px 10px 50px;
+            color: #8b0a0ade;
+            transition: color 0.3s;
+        }
+
+        body.dark h3 {
+            color: #ff8a80;
+        }
+
+        header {
+            font-family: arial;
+            margin: 0px 50px 10px 50px;
+            image-rendering: auto;
+        }
+
+        #volta {
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        .theme-toggle {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        body.dark .slider {
+            background-color: #4a5568;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        body.dark .slider:before {
+            transform: translateX(26px);
+            background-color: #f0f0f0;
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background-color: #8b0a0ade;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
+            z-index: 999;
+        }
+
+        body.dark .scroll-top {
+            background-color: #5d0707;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            background-color: #5d0707;
+        }
+
+        body.dark .scroll-top:hover {
+            background-color: #3e0505;
+        }
+    </style>
+</head>
+
+<body class="light">
+    <header>
+        <img src="cabeçalho2.png" alt="cabesalho" width="80%">
+        
+        <nav>
+            <a href="#historia">História</a>
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#ingredientes">Ingredientes</a>
+            <a href="#pessoas">Pessoas Relacionadas</a>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch">
+                <label class="slider" for="theme-switch"></label>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Comida Pais edição Japão</h1>
+
+    <h2 id="historia">História do Katsudon</h2>
+
+    <div>
+        <img src="katsudon.png" alt="historia" width="400">
+    </div>
+
+    <p>
+        O katsudon é um prato japonês feito com fatias de tonkatsu (carne de porco empanada) sobre arroz,
+        coberto com um molho doce e salgado à base de shoyu, dashi e açúcar. Sua criação data do
+        início do século XX, quando uma mãe, buscando trazer sorte para seu filho em um exame importante,
+        combinou tonkatsu com arroz em uma tigela (domburi). O nome "katsudon" é uma junção de "katsu"
+        (referência à vitória) e "don" (abreviação de domburi), tornando o prato símbolo de prosperidade
+        e sucesso. Atualmente, é uma refeição popular e reconfortante no Japão e no exterior.
+    </p>
+
+    <h2 id="curiosidades">Curiosidades sobre o Katsudon</h2>
+
+    <div>
+        <img src="curiosidades.png" alt="curiosidades" width="400">
+    </div>
+
+    <ul>
+        <li>Como mencionado antes, o nome "katsudon" deriva de "katsu" (vitória) e "don"
+            (domburi). Por isso, muitas pessoas comem katsudon antes de exames, jogos
+            importantes ou eventos importantes, acreditando que tiveram boa sorte e sucesso.</li>
+        <li>Apesar de serem amplamente populares em todo o Japão, existem variações
+            regionais do katsudon. Por exemplo, em algumas áreas, pode ser feito com um
+            molho mais adocicado, enquanto outras preferem um molho mais salgado ou picante.</li>
+        <li>Existe uma versão feminina do katsudon chamada "oyakodon"
+            (literalmente "arroz com filhos e pais"). Neste prato, o tonkatsu é substituído
+            por frango e ovos crus, criando um contraste interessante de sabores e texturas.</li>
+        <li>O katsudon é frequentemente associado à culinária de conforto no Japão. Muitas
+            vezes o prato reconfortante e ideal para dias frios ou momentos de tristeza,
+            especialmente porque o nome sugere positividade e esperança.</li>
+        <li>Com a crescente popularidade da culinária japonesa no mundo, o katsudon ganhou
+            espaço em restaurantes japoneses fora do Japão. Ele é uma das opções preferidas
+            entre os amantes de comida japonesa por causa de sua combinação de sabores e simplicidade.</li>
+    </ul>
+
+    <!-- lista não ordenada -->
+    <h2 id="ingredientes">Ingredientes do Katsudon</h2>
+    <div>
+        <img src="ingredientes.png" alt="ingredientes" width="400">
+    </div>
+
+    <h3>Ingredientes para o Tonkatsu (Porco Empanado):</h3>
+
+    <ul>
+        <li>4 fatias finas de carne de porco (lombo ou alcatra)</li>
+        <li>Farinha de trigo</li>
+        <li>Ovos</li>
+        <li>Panko (pão ralado japonês)</li>
+        <li>Óleo vegetal para fritar</li>
+    </ul>
+
+    <h3>Ingredientes para o Molho:</h3>
+
+    <ul>
+        <li>1/2 xícara de shoyu (molho de soja)</li>
+        <li>1/2 xícara de caldo dashi (ou água com extrato de camarão/kombu)</li>
+        <li>2 colheres de sopa de açúcar</li>
+        <li>1 colher de sopa de mirin (vinho doce japonês)</li>
+    </ul>
+
+    <h3>Ingredientes para o Arroz e Finalização:</h3>
+
+    <ul>
+        <li>Arroz branco cozido</li>
+        <li>2 ovos (1 para cozinhar com o molho, 1 para servir cru ou frito)</li>
+    </ul>
+
+    <!-- lista ordenada -->
+
+    <h2 id="pessoas">Pessoas relacionadas com a receita</h2>
+
+    <div>
+        <img src="pessoa.png" alt="pessoas relevantes" width="400">
+    </div>
+
+    <dl>
+        <dd>O katsudon simboliza sorte e sucesso devido ao seu nome
+            ("katsu" = vitória) e é frequentemente usado em doramas e animes
+            para marcar momentos importantes, além de representar culinária
+            tradicional e conexões emocionais entre personagens.</dd>
+        <dd>Dorama:
+            No dorama japonesa "Gokusen" de 2002, o katsudon é frequentemente
+            mencionado como um prato reconfortante e simbólico, especialmente
+            em momentos de tensão ou decisões importantes, refletindo seu papel
+            cultural como comida de sorte.</dd>
+        <dd>Anime:
+            Em "My Hero Academia" o katsudon é o prato favorito de Izuku Midoriya.
+            Ele o consome em momentos de reflexão ou necessidade de conforto,
+            destacando sua personalidade gentil e determinada. O prato também serve
+            como uma ligação emocional com All Might, reforçando os laços entre eles.</dd>
+        <dd>Outros Doramas e Animes:
+            O katsudon é usado em animes e doramas para simbolizar conforto e motivação,
+            aparecendo em momentos de decisão, reflexão ou conexão emocional. Em alguns
+            animes, ele reflete esperança, enquanto em alguns doramas, é associado a
+            momentos românticos e familiares.</dd>
+    </dl>
+    <!-- lista de descrição -->
+    <footer>
+        <h5>
+            &copy; Comida Pais | Edição Japão | 2025
+        </h5>
+    </footer>
+
+    <div class="scroll-top" id="scroll-top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"></path>
+        </svg>
+    </div>
+
+    <script>
+        // Alternar entre modo claro e escuro
+        const themeSwitch = document.getElementById('theme-switch');
+        const body = document.body;
+
+        // Verifica preferência do usuário no localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.replace('light', 'dark');
+            themeSwitch.checked = true;
+        }
+
+        themeSwitch.addEventListener('change', function() {
+            if (this.checked) {
+                body.classList.replace('light', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.replace('dark', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Botão de voltar ao topo
+        const scrollTopButton = document.getElementById('scroll-top');
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollTopButton.classList.add('visible');
+            } else {
+                scrollTopButton.classList.remove('visible');
+            }
+        });
+
+        scrollTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>
